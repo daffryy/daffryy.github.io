@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <script src="https://randojs.com/1.0.0.js"></script>
+    <script>
+        function showRandomNumber(){
+            document.getElementById("myNumber").innerHTML = rando(0,250);
+        }
+    </script>
+    <style>
+        #myNumber{
+            font-size:100px;
+            text-align:center;
+            margin:50 px auto;
+            font-family:Arial;
+        }
+    </style>
+</head>
+<body onload="showRandomNumber();" style="background:green">
+    <p><a href="../projects.html">Go Back</a></p>
+    <div id="myNumber"></div>
+    <p>random number gen 0-250 on refresh.</p>
+</body>
+</html>
